@@ -8,5 +8,18 @@ public class App {
         System.out.println("Ano de lançamento: " + anoDeLancamento);
         boolean incluidoNoPlano = false;
         double notaDoFilme = 8.1;
+
+        //comentário de uma linha - calcular média
+        double media = (9.8 + 6.3 + 8)/3;
+        System.out.println(media);
+
+        String sinopse;
+        sinopse = """
+        Filme Top Gun
+        Filme de aventura sequencia dos lançado nos anos 80.
+        Muito bom!
+        Ano de Lançamento:
+        """ + anoDeLancamento;
+        System.out.println(sinopse);
     }
 }
