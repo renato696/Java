@@ -7,5 +7,6 @@ public class App {
         anoDeLancamento = 2022;
         System.out.println("Ano de lançamento: " + anoDeLancamento);
         boolean incluidoNoPlano = false;
+        double notaDoFilme = 8.1;
     }
 }
