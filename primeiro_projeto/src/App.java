@@ -3,7 +3,9 @@ public class App {
         System.out.println("Esse é o Screen Match");
         System.out.println("Filme: TopGun: Maverick");
 
-        int ano;
-        ano = 2022;
+        int anoDeLancamento;
+        anoDeLancamento = 2022;
+        System.out.println("Ano de lançamento: " + anoDeLancamento);
+        boolean incluidoNoPlano = false;
     }
 }
