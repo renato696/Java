@@ -1,7 +1,7 @@
 public class Condicional {
     public static void main(String[] args) {
         int anoDeLancamento = 2022;
-        boolean incluidoNoPlano;
+        boolean incluidoNoPlano = false;
         double notaDoFilme = 8.1;
 
         if (anoDeLancamento >= 2022){
