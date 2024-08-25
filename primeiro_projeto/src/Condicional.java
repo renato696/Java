@@ -1,9 +1,9 @@
 public class Condicional {
     public static void main(String[] args) {
         int anoDeLancamento = 1986;
-        boolean incluidoNoPlano = true;
+        boolean incluidoNoPlano = false;
         double notaDoFilme = 8.1;
-        String tipoPlano = "plus";
+        String tipoPlano = "normal";
 
         if (anoDeLancamento >= 2022){
             System.out.println("Lançamento que os clientes estão curtindo");
@@ -17,4 +17,4 @@ public class Condicional {
             System.out.println("Deve pagar a locação!");
         }
     }
-}
+} 
