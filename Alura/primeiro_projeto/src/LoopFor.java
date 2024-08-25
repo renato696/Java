@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Loop {
+public class LoopFor {
     public static void main(String[] args) {
         Scanner reading = new Scanner(System.in);
         double avaliacaoMedia = 0;
