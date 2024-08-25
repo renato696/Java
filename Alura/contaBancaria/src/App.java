@@ -13,11 +13,11 @@ public class App {
         System.out.println("\n********************************");
 
         String menu = """
-                **Digite a opção desejada:
+                \n**Digite a opção desejada:
                 
                 1- Consultar saldo
                 2- Transferir valor
-                3- Receber valor
+                3- Depositar valor
                 4- Sair
                 
                 Opção:
@@ -30,28 +30,29 @@ public class App {
         while (operation != 4) {
             System.out.println(menu);
             operation = reading.nextInt();
-        }
+        
 
-        if(operation == 1) {
-            System.out.println("O saldo atualizado é: R$ " + accountBalance);
-        } else if (operation == 2) {
-            System.out.println("Qual o valor que deseja transferir?");
-            double amount = reading.nextDouble();
-                if (amount > accountBalance){
-                    System.out.println("Não há saldo suficiente para transferência");
-                } else {
-                    accountBalance -= amount;
-                    System.out.println("Seu saldo atual é: R$ " + accountBalance);
-                     }
-        } else if(operation == 3){
-            System.out.println("Valor recebido: R$ ");
-            double amount = reading.nextDouble();
-            accountBalance += amount;
-            System.out.println("Seu saldo atual é: R$ " + accountBalance);
-        } else if(operation != 4){
-            System.out.println("Opção inválida!");
+            if(operation == 1) {
+                System.out.println("O saldo atualizado é: R$ " + accountBalance);
+            } else if (operation == 2) {
+                System.out.println("Qual o valor que deseja transferir?");
+                double amount = reading.nextDouble();
+                    if (amount > accountBalance){
+                        System.out.println("Não há saldo suficiente para transferência");
+                    } else {
+                        accountBalance -= amount;
+                        System.out.println("Seu saldo atual é: R$ " + accountBalance);
+                        }
+            } else if(operation == 3){
+                System.out.println("Valor recebido: R$ ");
+                double amount = reading.nextDouble();
+                accountBalance += amount;
+                System.out.println("Seu saldo atual é: R$ " + accountBalance);
+            } else if(operation != 4){
+                System.out.println("Opção inválida!");
+            }
         }
-
-        }           
     }
+}          
+
 
