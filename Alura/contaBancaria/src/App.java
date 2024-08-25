@@ -1,7 +1,4 @@
-
 import java.util.Scanner;
-
-
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -35,5 +32,26 @@ public class App {
             operation = reading.nextInt();
         }
 
+        if(operation == 1) {
+            System.out.println("O saldo atualizado é: R$ " + accountBalance);
+        } else if (operation == 2) {
+            System.out.println("Qual o valor que deseja transferir?");
+            double amount = reading.nextDouble();
+                if (amount > accountBalance){
+                    System.out.println("Não há saldo suficiente para transferência");
+                } else {
+                    accountBalance -= amount;
+                    System.out.println("Seu saldo atual é: R$ " + accountBalance);
+                     }
+        } else if(operation == 3){
+            System.out.println("Valor recebido: R$ ");
+            double amount = reading.nextDouble();
+            accountBalance += amount;
+            System.out.println("Seu saldo atual é: R$ " + accountBalance);
+        } else if(operation != 4){
+            System.out.println("Opção inválida!");
+        }
+
+        }           
     }
-}
+
