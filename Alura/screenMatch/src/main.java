@@ -11,6 +11,6 @@ public class main {
         myMovie.rank(7.5);
         System.out.println(myMovie.rankingSum);
         System.out.println(myMovie.rankingTotal);
-
+        System.out.println(myMovie.rankingMedia());
     }
 }

@@ -15,4 +15,8 @@ public class Movie {
         rankingSum += score;
         rankingTotal ++;
     }
+
+    double rankingMedia(){
+        return rankingSum / rankingTotal;
+    }
 }
