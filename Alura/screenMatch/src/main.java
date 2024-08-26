@@ -6,5 +6,11 @@ public class main {
         myMovie.movieLength = 180;
 
         myMovie.printMovieInfo();
+        myMovie.rank(8.5);
+        myMovie.rank(9.0);
+        myMovie.rank(7.5);
+        System.out.println(myMovie.rankingSum);
+        System.out.println(myMovie.rankingTotal);
+
     }
 }
