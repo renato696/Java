@@ -5,4 +5,9 @@ public class Movie {
     double ranking;
     int rankingTotal;
     int movieLength;
+
+    void printMovieInfo(){
+        System.out.println("Nome do Filme: " + name);
+        System.out.println("Ano de Lançamento: " + releaseYear);
+    }
 }

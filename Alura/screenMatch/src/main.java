@@ -5,6 +5,6 @@ public class main {
         myMovie.releaseYear = 1970;
         myMovie.movieLength = 180;
 
-        System.out.println(myMovie.name);
+        myMovie.printMovieInfo();
     }
 }
