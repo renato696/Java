@@ -1,4 +1,6 @@
-public class main {
+import br.com.alura.screenmatch.models.Movie;
+
+public class Main {
     public static void main(String[] args) {
         //criando (instanciando) um objeto usando a classe
         Movie myMovie = new Movie();

@@ -1,30 +1,32 @@
+package br.com.alura.screenmatch.models;
+
 public class Movie {
 //atributos da classe
-    String name;
-    int releaseYear;
+    public String name;
+    public int releaseYear;
     boolean planIncluded;
     private double rankingSum;
     private int rankingTotal;
-    int movieLength;
+    public int movieLength;
 
 //métodos da classe
-    void printMovieInfo(){
+    public void printMovieInfo(){
         System.out.println("Nome do Filme: " + name);
         System.out.println("Ano de Lançamento: " + releaseYear);
     }
 
-    void rank(double score){
+    public void rank(double score){
         rankingSum += score;
         rankingTotal ++;
     }
 
 //método com return
-    double rankingMedia(){
+    public double rankingMedia(){
         return rankingSum / rankingTotal;
     }
 
 //Método GET - para compensar o PRIVATE no atributo.
-    int getrankingTotal(){
+    public int getrankingTotal(){
         return rankingTotal;
     }
 }
