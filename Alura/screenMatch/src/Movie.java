@@ -3,8 +3,8 @@ public class Movie {
     String name;
     int releaseYear;
     boolean planIncluded;
-    double rankingSum;
-    int rankingTotal;
+    private double rankingSum;
+    private int rankingTotal;
     int movieLength;
 
 //métodos da classe
