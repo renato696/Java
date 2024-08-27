@@ -6,9 +6,9 @@ public class Main {
         Movie myMovie = new Movie();
 
         //passando os atributos para o objeto
-        myMovie.name = "Godfather";
-        myMovie.releaseYear = 1970;
-        myMovie.movieLength = 180;
+        myMovie.setName("Godfather");
+        myMovie.setReleaseYear(1970);
+        myMovie.setMovieLenght(180);
 
         //invocando método da classe e passando atributos
         myMovie.printMovieInfo();

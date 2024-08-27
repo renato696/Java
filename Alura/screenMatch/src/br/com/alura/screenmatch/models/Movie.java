@@ -2,12 +2,12 @@ package br.com.alura.screenmatch.models;
 
 public class Movie {
 //atributos da classe
-    public String name;
-    public int releaseYear;
-    boolean planIncluded;
+    private String name;
+    private int releaseYear;
+    private boolean planIncluded;
     private double rankingSum;
     private int rankingTotal;
-    public int movieLength;
+    private int movieLength;
 
 //métodos da classe
     public void printMovieInfo(){
@@ -29,4 +29,22 @@ public class Movie {
     public int getrankingTotal(){
         return rankingTotal;
     }
+
+//Método SET - recebo o parametro e salvo na variavel name
+    public void setName(String name){
+        this.name = name;
+    }
+    
+    public void setReleaseYear(int releaseYear){
+        this.releaseYear = releaseYear;
+    }
+
+    public void setMovieLenght(int movieLength){
+        this.movieLength = movieLength;
+    }
+
+    public void setPlanIncluded(boolean planIncluded){
+        this.planIncluded = planIncluded;
+    }
+
 }
