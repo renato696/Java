@@ -14,8 +14,8 @@ public class main {
         myMovie.rank(9.0);
         myMovie.rank(7.5);
         
-        //invocando os métodos da classe
-        System.out.println(myMovie.rankingTotal);
+        //invocando os métodos da classe e retorno com GET
+        System.out.println("Total de avaliações: " + myMovie.getrankingTotal());
 
         //invocando método e obtendo retorno
         System.out.println(myMovie.rankingMedia());
