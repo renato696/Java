@@ -15,7 +15,6 @@ public class main {
         myMovie.rank(7.5);
         
         //invocando os métodos da classe
-        System.out.println(myMovie.rankingSum);
         System.out.println(myMovie.rankingTotal);
 
         //invocando método e obtendo retorno

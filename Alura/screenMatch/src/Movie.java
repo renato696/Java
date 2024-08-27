@@ -22,4 +22,9 @@ public class Movie {
     double rankingMedia(){
         return rankingSum / rankingTotal;
     }
+
+//Método GET - para compensar o PRIVATE no atributo.
+    int getrankingTotal(){
+        return rankingTotal;
+    }
 }
