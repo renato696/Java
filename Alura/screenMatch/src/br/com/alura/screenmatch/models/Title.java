@@ -1,6 +1,6 @@
 package br.com.alura.screenmatch.models;
 
-public class Titulo {
+public class Title {
 
     //atributos da classe
     private String name;
