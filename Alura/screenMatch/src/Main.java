@@ -10,14 +10,15 @@ public class Main {
         //passando os atributos para o objeto
         myMovie.setName("Godfather");
         myMovie.setReleaseYear(1970);
-        myMovie.setMovieLenght(180);
+        myMovie.setMovieLength(180);
+        System.out.println("Duração do filme: " + myMovie.getMovieLenght());
 
         mySerie.setName("Lost");
         mySerie.setReleaseYear(2000);
         mySerie.printMovieInfo();
         mySerie.setSeasons(10);
         mySerie.setEpisodesPerSeason(8);
-        
+        System.out.println("Duração do filme: " + mySerie.getMovieLenght());
 
         //invocando método da classe e passando atributos
         myMovie.printMovieInfo();

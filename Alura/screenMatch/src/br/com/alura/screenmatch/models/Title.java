@@ -26,12 +26,20 @@ public class Title {
         return rankingSum / rankingTotal;
     }
 
-//Método GET - para compensar o PRIVATE no atributo.
+//Método GET - para compensar o PRIVATE no atributo; retornar o valor da variável é uma forma de utiliza-la
     public int getrankingTotal(){
         return rankingTotal;
     }
 
-//Método SET - recebo o parametro e salvo na variavel name
+    public int getMovieLenght(){
+        return movieLength;
+    }
+
+    public boolean getPlanIncluded(){
+        return planIncluded;
+    }
+
+//Método SET - recebo o parametro e salvo na variavel neste escopo
     public void setName(String name){
         this.name = name;
     }
@@ -40,7 +48,7 @@ public class Title {
         this.releaseYear = releaseYear;
     }
 
-    public void setMovieLenght(int movieLength){
+    public void setMovieLength(int movieLength){
         this.movieLength = movieLength;
     }
 
