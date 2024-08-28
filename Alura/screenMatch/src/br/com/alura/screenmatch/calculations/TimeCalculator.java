@@ -1,6 +1,7 @@
 package br.com.alura.screenmatch.calculations;
 
 import br.com.alura.screenmatch.models.Movie;
+import br.com.alura.screenmatch.models.Series;
 
 public class TimeCalculator {
     private int totalTime = 0;
@@ -11,6 +12,10 @@ public class TimeCalculator {
 
     public void addTime(Movie m){
         this.totalTime += m.getMovieLenght();
+    }
+
+    public void addTime(Serie s){
+        this.totalTime +=s.getMovieLenght();
     }
 
 }
