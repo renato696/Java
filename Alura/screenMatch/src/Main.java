@@ -15,7 +15,9 @@ public class Main {
         mySerie.setName("Lost");
         mySerie.setReleaseYear(2000);
         mySerie.printMovieInfo();
-
+        mySerie.setSeasons(10);
+        mySerie.setEpisodesPerSeason(8);
+        
 
         //invocando método da classe e passando atributos
         myMovie.printMovieInfo();
