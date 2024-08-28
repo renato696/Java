@@ -1,6 +1,6 @@
 package br.com.alura.screenmatch.models;
 
-public class Movie {
+public class Movie extends Title{
 
     private String director;
 

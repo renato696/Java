@@ -1,14 +1,21 @@
 import br.com.alura.screenmatch.models.Movie;
+import br.com.alura.screenmatch.models.Series;
 
 public class Main {
     public static void main(String[] args) {
         //criando (instanciando) um objeto usando a classe
         Movie myMovie = new Movie();
+        Series mySerie = new Series();
 
         //passando os atributos para o objeto
         myMovie.setName("Godfather");
         myMovie.setReleaseYear(1970);
         myMovie.setMovieLenght(180);
+
+        mySerie.setName("Lost");
+        mySerie.setReleaseYear(2000);
+        mySerie.printMovieInfo();
+
 
         //invocando método da classe e passando atributos
         myMovie.printMovieInfo();

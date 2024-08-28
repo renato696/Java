@@ -12,7 +12,7 @@ public class Title {
 
 //métodos da classe
     public void printMovieInfo(){
-        System.out.println("Nome do Filme: " + name);
+        System.out.println("Nome do Título: " + name);
         System.out.println("Ano de Lançamento: " + releaseYear);
     }
 
