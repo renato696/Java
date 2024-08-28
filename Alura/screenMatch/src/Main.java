@@ -31,6 +31,7 @@ public class Main {
         TimeCalculator calculator = new TimeCalculator();
         calculator.addTime(myMovie);
         calculator.addTime(otherMovie);
+        calculator.addTime(mySerie);
         System.out.println("Tempo total em tela: " + calculator.getTotalTime());
 
         //invocando método da classe e passando atributos
