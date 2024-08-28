@@ -18,7 +18,8 @@ public class Main {
         mySerie.printMovieInfo();
         mySerie.setSeasons(10);
         mySerie.setEpisodesPerSeason(8);
-        System.out.println("Duração do filme: " + mySerie.getMovieLenght());
+        mySerie.setMinutesPerEpisode(60);
+        System.out.println("Duração para maratonar a série: " + mySerie.getMovieLenght());
 
         //invocando método da classe e passando atributos
         myMovie.printMovieInfo();

@@ -32,5 +32,9 @@ public class Series extends Title{
             this.minutesPerEpisode = minutesPerEpisode;
         }
      
+        @Override
+        public int getMovieLenght(){
+            return seasons * episodesPerSeason * minutesPerEpisode;
+        }
 
 }
