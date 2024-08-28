@@ -1,3 +1,4 @@
+import br.com.alura.screenmatch.calculations.TimeCalculator;
 import br.com.alura.screenmatch.models.Movie;
 import br.com.alura.screenmatch.models.Series;
 
@@ -20,6 +21,17 @@ public class Main {
         mySerie.setEpisodesPerSeason(8);
         mySerie.setMinutesPerEpisode(60);
         System.out.println("Duração para maratonar a série: " + mySerie.getMovieLenght());
+
+        Movie otherMovie = new Movie();
+        otherMovie.setName("Conan - The Barbarian");
+        otherMovie.setReleaseYear(1982);
+        otherMovie.setMovieLength(160);
+        System.out.println("Duração do filme: " + myMovie.getMovieLenght());
+
+        TimeCalculator calculator = new TimeCalculator();
+        calculator.addTime(myMovie);
+        calculator.addTime(otherMovie);
+        System.out.println("Tempo total em tela: " + calculator.getTotalTime());
 
         //invocando método da classe e passando atributos
         myMovie.printMovieInfo();
