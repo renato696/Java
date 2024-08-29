@@ -1,6 +1,8 @@
 package br.com.alura.screenmatch.models;
 
-public class Movie extends Title{
+import br.com.alura.screenmatch.calculations.Classification;
+
+public class Movie extends Title implements Classification{
 
     private String director;
 
@@ -12,4 +14,8 @@ public class Movie extends Title{
         this.director = director;
     }
 
+    @Override
+    public int getClassification(){
+        return (int) rankingMedia() / 2;
+    }
 }
