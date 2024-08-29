@@ -1,3 +1,4 @@
+import br.com.alura.screenmatch.calculations.Recomendations;
 import br.com.alura.screenmatch.calculations.TimeCalculator;
 import br.com.alura.screenmatch.models.Movie;
 import br.com.alura.screenmatch.models.Series;
@@ -33,6 +34,9 @@ public class Main {
         calculator.addTime(otherMovie);
         calculator.addTime(mySerie);
         System.out.println("Tempo total em tela: " + calculator.getTotalTime());
+
+        Recomendations filterRecomendations - new filterRecomendations();
+        filterRecomendations.recomendationsFilter(myMovie);
 
         //invocando método da classe e passando atributos
         myMovie.printMovieInfo();
