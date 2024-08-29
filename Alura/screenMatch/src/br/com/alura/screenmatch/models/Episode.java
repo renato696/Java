@@ -39,7 +39,7 @@ public class Episode implements Classification{
     @Override
     public int getClassification() {
         if (totalViews > 100){
-        return 4;
+            return 4;
         } else {
             return 2;
         }
