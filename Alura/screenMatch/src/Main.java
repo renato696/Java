@@ -35,8 +35,8 @@ public class Main {
         calculator.addTime(mySerie);
         System.out.println("Tempo total em tela: " + calculator.getTotalTime());
 
-        Recomendations filterRecomendations - new filterRecomendations();
-        filterRecomendations.recomendationsFilter(myMovie);
+        Recomendations recomendationsFilter = new Recomendations();
+        recomendationsFilter.recomendationsFilter(myMovie);
 
         //invocando método da classe e passando atributos
         myMovie.printMovieInfo();
