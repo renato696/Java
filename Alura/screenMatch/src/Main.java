@@ -1,5 +1,6 @@
 import br.com.alura.screenmatch.calculations.Recomendations;
 import br.com.alura.screenmatch.calculations.TimeCalculator;
+import br.com.alura.screenmatch.models.Episode;
 import br.com.alura.screenmatch.models.Movie;
 import br.com.alura.screenmatch.models.Series;
 
@@ -37,6 +38,13 @@ public class Main {
 
         Recomendations recomendationsFilter = new Recomendations();
         recomendationsFilter.recomendationsFilter(myMovie);
+
+        Episode episode = new Episode();
+        episode.setEpisodeNumber(1);
+        episode.setEpisodeName(01);
+        episode.setTotalViews(300);
+        recomendationsFilter.recomendationsFilter(episode);
+
 
         //invocando método da classe e passando atributos
         myMovie.printMovieInfo();
