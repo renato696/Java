@@ -23,6 +23,7 @@ public class TimeCalculator {
 
 //pegando os dados da superclasse, eu reduzo o acoplamento.
     public void addTime(Title title){
+        System.out.println("Adicionando duração em minutos de: " + title);
         this.totalTime += title.getMovieLenght();
     }
 
