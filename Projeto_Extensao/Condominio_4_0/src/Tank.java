@@ -1,4 +1,4 @@
-public class Tank extends Sensors{
+public class Tank {
     
     private boolean level_1;
     private boolean level_2;
