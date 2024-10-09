@@ -3,7 +3,7 @@ public class Sensors {
     private boolean level_2 = false;
     private boolean level_3 = false;
 
-    private boolean flow = true;
+    private int flow = 1;
     
     private boolean pump_1 = false;
     private boolean pump_2 = false;
@@ -20,7 +20,7 @@ public class Sensors {
         return level_3;
     }
     
-    public boolean getFlow() {
+    public int getFlow() {
         return flow;
     }
 
