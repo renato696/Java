@@ -1,10 +1,13 @@
+
+import java.util.concurrent.Flow;
+
 public class Sensors {
     private boolean level_1 = false;
     private boolean level_2 = false;
     private boolean level_3 = false;
 
     private boolean flow = true;
-
+    
     private boolean pump_1 = false;
     private boolean pump_2 = false;
     
