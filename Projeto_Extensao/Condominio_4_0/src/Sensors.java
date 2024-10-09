@@ -1,6 +1,3 @@
-
-import java.util.concurrent.Flow;
-
 public class Sensors {
     private boolean level_1 = false;
     private boolean level_2 = false;
