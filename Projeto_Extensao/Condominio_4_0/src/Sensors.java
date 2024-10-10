@@ -1,35 +1,25 @@
 public class Sensors {
-    private boolean level_1 = false;
-    private boolean level_2 = false;
-    private boolean level_3 = false;
+   
+    private boolean sensor1 = true;
+    private boolean sensor2 = true;
+    private boolean sensor3 = true;
+    private boolean water_pipe = true;
 
-    private int flow = 1;
-    
-    private boolean pump_1 = false;
-    private boolean pump_2 = false;
-    
-    public boolean getLevel_1() {
-        return level_1;
-    }
-    
-    public boolean getLevel_2() {
-        return level_2;
-    }
-    
-    public boolean getLevel_3() {
-        return level_3;
-    }
-    
-    public int getFlow() {
-        return flow;
+
+    public boolean getSensor1() {
+        return sensor1;
     }
 
-    public boolean getPump_1() {
-        return pump_1;
+    public boolean getSensor2() {
+        return sensor2;
     }
-    
-    public boolean getPump_2() {
-        return pump_2;
+
+    public boolean getSensor3() {
+        return sensor3;
+    }
+
+    public boolean getWater_pipe() {
+        return water_pipe;
     }
 
 }

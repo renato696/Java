@@ -1,33 +1,31 @@
-public class Tank {
+public class Tank extends Sensors{
+ 
+    public static boolean level_low;
+    public static boolean level_medium;
+    public static boolean level_high;
+    public static boolean water_flow;
     
-    private boolean level_1;
-    private boolean level_2;
-    private boolean level_3;
-    private int flow1;
-
-
-    public void setLevel_1(boolean level_1) {
-        this.level_1 =  level_1;
-    }
-    
-    public void setLevel_2(boolean level_2) {
-        this.level_2 = level_2;
-    }
-    
-    public void setLevel_3(boolean level_3) {
-        this.level_3 = level_3;
-    }
-    
-    public void setFlow(int flow) {
-        this.flow1 = flow;
+    public void setLevel_low(){
+        level_low = getSensor1();
     }
 
-    
-    public void water_flow(){
-        if (flow1 == 1) {
-            System.out.println("Entrada de água da rua OK.");
-        } else {
-            System.out.println("Sem entrada de água da rua");
-        }}
+    public void setLevel_medium(){
+        level_medium = getSensor2();
+    }
+
+    public void setLevel_high(){
+        level_high = getSensor3();
+    }
+
+    public void setWater_flow(){
+        water_flow = getWater_pipe();
+    }
+
+    public void updateSensors(){
+        setLevel_low();
+        setLevel_medium();
+        setLevel_high();
+        setWater_flow();
+    }
 
 }

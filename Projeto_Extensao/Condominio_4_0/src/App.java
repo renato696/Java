@@ -1,8 +1,17 @@
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Condominio 4.0");
+    
+//        Sensors sensors = new Sensors();
         Tank tank = new Tank();
-        tank.water_flow();
+//        Pumps pump = new Pumps();
+
+        tank.updateSensors();
+
+        System.out.println(Tank.level_low);
+        System.out.println(Tank.level_medium);
+        System.out.println(Tank.level_high);
+        System.out.println(Tank.water_flow);
     }
 
 
