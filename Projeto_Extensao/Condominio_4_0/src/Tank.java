@@ -21,11 +21,20 @@ public class Tank extends Sensors{
         water_flow = getWater_pipe();
     }
 
-    public void updateSensors(){
+    public void waterFlow(){
+        if (water_flow == true){
+            System.out.println("Entrada de água da rua ok!");       
+        } else {
+            System.out.println("Sem água da rua, atençao!");
+        }
+    }
+
+    public void startTank(){
         setLevel_low();
         setLevel_medium();
         setLevel_high();
         setWater_flow();
+        waterFlow();
     }
 
 }

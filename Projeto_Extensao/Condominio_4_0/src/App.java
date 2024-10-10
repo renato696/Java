@@ -6,7 +6,7 @@ public class App {
         Tank tank = new Tank();
 //        Pumps pump = new Pumps();
 
-        tank.updateSensors();
+        tank.startTank();
 
         System.out.println(Tank.level_low);
         System.out.println(Tank.level_medium);
