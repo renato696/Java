@@ -23,9 +23,9 @@ public class Sensors {
     }
 
     public void startSensors(){
-        System.out.println(String.format("Sensor 1: %d", sensor1));
-        System.out.println(String.format("Sensor 2: %d", sensor2));
-        System.out.println(String.format("Sensor 3: %d", sensor3));
-        System.out.println(String.format("Sensor flow: %d", water_pipe));
+        System.out.println(String.format("Sensor 1 status: %d", sensor1));
+        System.out.println(String.format("Sensor 2 status: %d", sensor2));
+        System.out.println(String.format("Sensor 3 status: %d", sensor3));
+        System.out.println(String.format("Sensor flow status: %d", water_pipe));
     }
 }

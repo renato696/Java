@@ -9,6 +9,6 @@ public class Dashboard {
 
     public void currentTank_code(){
         tank_code = tank.getCode_dashboard();
-        System.out.println(String.format("Codigo do Tanque: %d", tank_code));
+        System.out.println(String.format("Dashboard - Codigo do status do Tanque: %d", tank_code));
     }
 }
