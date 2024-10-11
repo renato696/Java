@@ -1,10 +1,14 @@
 public class Tank extends Sensors{
  
-    public int level_low;
-    public int level_medium;
-    public int level_high;
-    public int water_flow;
-    
+    private int level_low;
+    private int level_medium;
+    private int level_high;
+    private int water_flow;
+
+    public int getCode_dashboard(){
+        return level_low + level_medium + level_high + water_flow;
+    }
+
     public void setLevel_low(){
         level_low = getSensor1();
     }
@@ -44,6 +48,7 @@ public class Tank extends Sensors{
                 System.out.println("Erros nos sensores, verificar!");
                 break;
         }
+
     }
 
     public void startTank(){

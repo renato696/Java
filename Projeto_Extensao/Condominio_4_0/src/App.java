@@ -8,6 +8,9 @@ public class App {
         Tank tank = new Tank();
         tank.startTank();
 
+        Dashboard dashboard = new Dashboard(tank);
+        dashboard.currentTank_code();
+
     }
 
 
