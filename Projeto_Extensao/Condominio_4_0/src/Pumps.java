@@ -8,9 +8,11 @@ private int water_pump2;
 
 private LocalDateTime startTimePump1;
 private LocalDateTime endTimePump1;
+private long Pump1TotalWorkedTime;
 
 private LocalDateTime startTimePump2;
 private LocalDateTime endTimePump2;
+private long Pump2TotalWorkedTime;
 
     public void setWater_pump1(){
         water_pump1 = getPump1();
@@ -43,11 +45,17 @@ private LocalDateTime endTimePump2;
         }
     }
 
-    private void calculateOperatingPump1Time() {
+    private long[] calculateOperatingPump1Time() {
+        long minutes = 0;
         if (startTimePump1 != null && endTimePump1 != null) {
             Duration duration = Duration.between(startTimePump1, endTimePump1);
-            long minutes = duration.toMinutes();
-            System.out.println("Bomba 1 funcionou por: " + minutes + " minutos.");
+            minutes = duration.toMinutes();
+            Pump1TotalWorkedTime += minutes;
+            System.out.println("Tempo total acumulado de Bomba 1: " + Pump1TotalWorkedTime + " minutos.");
+            return new long[]{minutes, Pump1TotalWorkedTime};
+        } else {
+            System.out.println("Não foi possível calcular o tempo de operação.");
+            return new long[]{0, Pump1TotalWorkedTime};
             }
         }
   
@@ -61,7 +69,6 @@ private LocalDateTime endTimePump2;
         }
     }
 
-
     public void pump2WorkTime(){
         if (water_pump2 == 1) {
             startTimePump2 = LocalDateTime.now();
@@ -69,15 +76,21 @@ private LocalDateTime endTimePump2;
         } else {
             endTimePump2 = LocalDateTime.now();
             System.out.println("Bomba 2 desligada em: " + endTimePump2);
-            calculateOperatingPump1Time();
+            calculateOperatingPump2Time();
             }
     }
     
-    private void calculateOperatingPump2Time() {
+    private long[] calculateOperatingPump2Time() {
+        long minutes = 0;
         if (startTimePump2 != null && endTimePump2 != null) {
             Duration duration = Duration.between(startTimePump2, endTimePump2);
-            long minutes = duration.toMinutes();
-            System.out.println("Bomba 2 funcionou por: " + minutes + " minutos.");
+            minutes = duration.toMinutes();
+            Pump2TotalWorkedTime += minutes;
+            System.out.println("Tempo total acumulado de Bomba 2: " + Pump2TotalWorkedTime + " minutos.");
+            return new long[]{minutes, Pump2TotalWorkedTime};
+        } else {
+            System.out.println("Não foi possível calcular o tempo de operação.");
+            return new long[]{0, Pump2TotalWorkedTime};
             }
         }
 
