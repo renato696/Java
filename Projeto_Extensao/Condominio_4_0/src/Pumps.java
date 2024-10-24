@@ -45,19 +45,22 @@ private long Pump2TotalWorkedTime;
         }
     }
 
-    private long[] calculateOperatingPump1Time() {
-        long minutes = 0;
+    private long calculateOperatingPump1Time() {
         if (startTimePump1 != null && endTimePump1 != null) {
             Duration duration = Duration.between(startTimePump1, endTimePump1);
-            minutes = duration.toMinutes();
+            long minutes = duration.toMinutes();
             Pump1TotalWorkedTime += minutes;
             System.out.println("Tempo total acumulado de Bomba 1: " + Pump1TotalWorkedTime + " minutos.");
-            return new long[]{minutes, Pump1TotalWorkedTime};
+            return Pump1TotalWorkedTime;
         } else {
             System.out.println("Não foi possível calcular o tempo de operação.");
-            return new long[]{0, Pump1TotalWorkedTime};
+            return Pump1TotalWorkedTime;
             }
-        }
+    }
+
+    public long getPump1TotalWorkedTime() {
+        return Pump1TotalWorkedTime;
+    }
   
     public String isPump2ON() {
         if (water_pump2 == 1) {
@@ -80,19 +83,22 @@ private long Pump2TotalWorkedTime;
             }
     }
     
-    private long[] calculateOperatingPump2Time() {
-        long minutes = 0;
+    private long calculateOperatingPump2Time() {
         if (startTimePump2 != null && endTimePump2 != null) {
             Duration duration = Duration.between(startTimePump2, endTimePump2);
-            minutes = duration.toMinutes();
+            long minutes = duration.toMinutes();
             Pump2TotalWorkedTime += minutes;
             System.out.println("Tempo total acumulado de Bomba 2: " + Pump2TotalWorkedTime + " minutos.");
-            return new long[]{minutes, Pump2TotalWorkedTime};
+            return Pump2TotalWorkedTime;
         } else {
             System.out.println("Não foi possível calcular o tempo de operação.");
-            return new long[]{0, Pump2TotalWorkedTime};
+            return Pump2TotalWorkedTime;
             }
         }
+
+    public long getPump2TotalWorkedTime() {
+        return Pump2TotalWorkedTime;
+    }
 
     public void startPumps(){
         setWater_pump1();
