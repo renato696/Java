@@ -41,10 +41,10 @@ private long Pump2TotalWorkedTime;
         } else {
             endTimePump1 = LocalDateTime.now();
             System.out.println("Bomba 1 desligada em: " + endTimePump1);
-            calculateOperatingPump1Time();
-        }
+            calculateOperatingPump2Time();
+            }
     }
-
+    
     private long calculateOperatingPump1Time() {
         if (startTimePump1 != null && endTimePump1 != null) {
             Duration duration = Duration.between(startTimePump1, endTimePump1);
@@ -56,7 +56,7 @@ private long Pump2TotalWorkedTime;
             System.out.println("Não foi possível calcular o tempo de operação.");
             return Pump1TotalWorkedTime;
             }
-    }
+        }
 
     public long getPump1TotalWorkedTime() {
         return Pump1TotalWorkedTime;
