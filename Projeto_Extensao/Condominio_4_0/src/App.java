@@ -1,5 +1,5 @@
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         System.out.println("Condominio 4.0");
     
         Sensors sensors = new Sensors();
@@ -15,6 +15,5 @@ public class App {
         dashboard.currentTank_code();
 
     }
-
 
 }
