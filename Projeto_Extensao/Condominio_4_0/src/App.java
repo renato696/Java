@@ -12,7 +12,8 @@ public class App {
         pumps.startPumps();
 
         Dashboard dashboard = new Dashboard(tank);
-        dashboard.currentTank_code();
+        dashboard.refreshDashboard();
+
 
     }
 
