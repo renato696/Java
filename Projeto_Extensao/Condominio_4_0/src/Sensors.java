@@ -5,7 +5,7 @@ public class Sensors {
     private int sensor3 = 1;
     private int water_pipe = 1;
 
-    private int pump1 = 0;
+    private int pump1 = 1;
     private int pump2 = 0;
 
 

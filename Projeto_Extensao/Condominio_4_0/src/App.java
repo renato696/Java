@@ -8,7 +8,7 @@ public class App {
         Tank tank = new Tank();
         tank.startTank();
 
-        Pumps pumps = new Pumps();
+        Pumpss pumps = new Pumpss();
         pumps.startPumps();
 
         Dashboard dashboard = new Dashboard(tank);
